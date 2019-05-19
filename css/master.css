@@ -1,0 +1,148 @@
+#Header {
+    position: relative;
+}
+
+.page-inner{
+ position: relative;
+}
+
+#Action_bar{
+  display: grid;
+  background-color: #331680 !important;
+  color: #fff !important;
+  grid-auto-flow: column;
+  grid-template-columns: 60% 10%;
+  justify-content: space-between;
+  padding-top: .5%;
+}
+
+#Action_bar .contact_details{
+  display: grid;
+  grid-auto-flow: column;
+  float: left;
+}
+
+#Action_bar .social{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+li {
+  list-style: none;
+}
+
+#Action_bar .contact_details a, #Action_bar .contact_details {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.social a{
+  color: white;
+}
+
+.logoCortinas{
+  border-radius: 15%;
+  width: 50%;
+}
+
+.gtco-nav {
+    padding: 5px 0;
+}
+
+#contenedor{
+  padding: 1em 0;
+}
+
+#gtco-footer{
+    padding: 1em 0;
+    clear: both;
+    position: relative;
+}
+
+#gtco-footer .copyright {
+    color: #b3b3b3;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 1px solid #f2f2f2;
+}
+
+.gtco-heading {
+    margin-bottom: 1em;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-gap:5px;
+    justify-content: center;
+}
+.item a{
+  max-width: 100%;
+}
+
+.level-1{
+  grid-row-end: span 3;
+}
+.level-2{
+   grid-row-end: span 2;
+}
+.level-3{
+   grid-row-end: span 1;
+}
+.fh5co-project-item {
+margin-bottom: 0px;
+}
+.fh5co-project-item figure {
+    height: auto;
+}
+
+#gtco-features, #gtco-features-2, #gtco-products, #gtco-services, #gtco-subscribe, #gtco-footer, .gtco-section {
+  padding-bottom: 1em !important;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+
+   body {
+      font-size: 13px;
+      line-height: 19px;
+  }
+
+  #Action_bar .contact_details li.slogan {
+    display: none;
+  }
+
+  .container-grid{
+      grid-template-columns: repeat(1,250px) !important;
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+   body {
+      font-size: 13px;
+      line-height: 19px;
+  }
+
+  #Action_bar {
+    display: grid;
+    background-color: #331680 !important;
+    color: #fff !important;
+    grid-auto-flow: column;
+    grid-template-columns: max-content;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  #Action_bar .contact_details li.slogan{
+    display: none;
+  }
+
+  #Action_bar .contact_details li.mail{
+    display: none;
+  }
+
+  .container-grid{
+      grid-template-columns: repeat(1,250px) !important;
+  }
+
+}
