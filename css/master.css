@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.js .animate-box {
+    opacity: 1;
+}
+
 .page-inner{
  position: relative;
 }
@@ -11,7 +15,7 @@
   background-color: #331680 !important;
   color: #fff !important;
   grid-auto-flow: column;
-  grid-template-columns: 60% 10%;
+  grid-template-columns: 80% 10%;
   justify-content: space-between;
   padding-top: .5%;
 }
@@ -20,7 +24,26 @@
   display: grid;
   grid-auto-flow: column;
   float: left;
+  justify-content: space-around;
 }
+
+#Action_bar .phone{
+  display: flex;
+}
+
+#celular .icon-mobile{
+  padding-top: 2px;
+}
+
+#celular{
+  display: flex;
+}
+
+#Action_bar .icon-phone {
+  vertical-align: middle;
+  padding: 1%;
+}
+
 
 #Action_bar .social{
   display: grid;
@@ -51,6 +74,10 @@ li {
 
 #contenedor{
   padding: 1em 0;
+}
+
+.gtco-nav #gtco-logo {
+    text-align: right;
 }
 
 #gtco-footer{
@@ -96,6 +123,14 @@ margin-bottom: 0px;
     height: auto;
 }
 
+.fh5co-text p{
+  text-align: justify;
+}
+
+.fh5co-project-item .fh5co-text {
+    padding: 0px 15px 10px 15px;
+}
+
 #gtco-features, #gtco-features-2, #gtco-products, #gtco-services, #gtco-subscribe, #gtco-footer, .gtco-section {
   padding-bottom: 1em !important;
 }
@@ -138,6 +173,10 @@ margin-bottom: 0px;
   }
 
   #Action_bar .contact_details li.mail{
+    display: none;
+  }
+
+  #Action_bar .contact_details #teleFijo{
     display: none;
   }
 

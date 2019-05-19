@@ -1,0 +1,57 @@
+@-webkit-keyframes pulsee {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulsee {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulsee {
+  -webkit-animation-name: pulsee;
+  animation-name: pulsee;
+}
+
+
+.fadeIn{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadein;
+		-webkit-animation-name: fadein;
+
+	 }
+	@keyframes fadein {
+		from{
+			opacity: 0;
+		 }
+		to{
+			opacity: 1;
+		 }
+	}
