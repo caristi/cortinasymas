@@ -1,3 +1,4 @@
+/*---Header -- */
 #Header{
   display: grid;
   grid-auto-flow: column;
@@ -35,9 +36,19 @@
   grid-auto-flow: column;
 }
 
+/*--- Fin Header -- */
 
+/*  Menu */
+
+#imgLogo {
+ height: 60px;
+}
+
+/*  Fin Menu */
 
 @media only screen and (max-width: 1014px) and (min-width: 790px){
+/*---Header -- */
+
   #correo{
     display: none;
   }
@@ -45,10 +56,11 @@
   .contacto_detalle{
     grid-template-columns: 43% 25% 25% 0%;
   }
+/*--- Fin Header -- */
 }
 
 @media only screen and (max-width: 789px) and (min-width: 650px){
-
+/*---Header -- */
   #correo{
     display: none;
   }
@@ -60,10 +72,11 @@
   .contacto_detalle{
     grid-template-columns: 53% 15% 25% 0%;
   }
+/*--- Fin Header -- */
 }
 
 @media only screen and (max-width: 649px) and (min-width: 530px){
-
+/*---Header -- */
   #correo{
     display: none;
   }
@@ -72,24 +85,30 @@
     display: none;
   }
 
-  .contacto_detalle .ciudad{
-    display: none;
-  }
-
   .contacto_detalle{
     grid-template-columns: 45% 16% 25% 0%;
     padding: 2px;
   }
+
+  .contacto_detalle .ciudad{
+    display: none;
+  }
+/*--- Fin Header -- */
 }
 
 @media only screen and (max-width: 530px) and (min-width: 340px){
-
+/*---Header -- */
   #correo{
     display: none;
   }
 
   #teleFijo {
     display: none;
+  }
+
+  #celular{
+   justify-content: center;
+   text-align: center!important;
   }
 
   .contacto_detalle{
@@ -98,21 +117,22 @@
     justify-content: center;
     padding: 2px;
   }
-
-  #celular{
-   justify-content: center;
-   text-align: center!important;
-  }
+/*--- Fin Header -- */
 }
 
 @media only screen and (max-width: 339px){
-
+/*---Header -- */
   #correo{
     display: none;
   }
 
   #teleFijo {
     display: none;
+  }
+
+  #celular{
+   justify-content: center;
+   text-align: center!important;
   }
 
   .contacto_detalle{
@@ -126,8 +146,6 @@
     display: none;
   }
 
-  #celular{
-   justify-content: center;
-   text-align: center!important;
-  }
+
+/*--- Fin Header -- */
 }
