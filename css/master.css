@@ -1,3 +1,7 @@
+body{
+  background: #f8f9fa!important;
+}
+
 /*---Header -- */
 #Header{
   display: grid;
@@ -50,6 +54,62 @@
 
 /*  Fin Menu */
 
+/*Contenedor*/
+
+#contenido,#proveedores  h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #000;
+  position: relative;
+}
+
+#contenido,#proveedores p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: gray;
+}
+
+.card-columns {
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+}
+
+#proveedores img{
+   width: 200px;
+   height: 100px;
+}
+
+/* Fin Contenedor*/
+
+/*Footer*/
+
+#footer h3{
+  margin-bottom: 15px;
+  font-weight: bold !important;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  border-top: 1px solid #d6d6d657;
+  padding-top: 8px;
+}
+
+
+#footerContacto{
+  list-style: none;
+}
+
+#footerContacto a:hover{
+  text-decoration: none;
+}
+/* Fin Footer*/
+
 @media only screen and (max-width: 1014px) and (min-width: 790px){
 /*---Header -- */
 
@@ -60,7 +120,10 @@
   .contacto_detalle{
     grid-template-columns: 43% 25% 25% 0%;
   }
+
 /*--- Fin Header -- */
+
+
 }
 
 @media only screen and (max-width: 789px) and (min-width: 650px){
@@ -76,7 +139,16 @@
   .contacto_detalle{
     grid-template-columns: 53% 15% 25% 0%;
   }
+
 /*--- Fin Header -- */
+
+  /* Contenedor*/
+  .card-columns {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+  }
+
 }
 
 @media only screen and (max-width: 649px) and (min-width: 530px){
@@ -98,6 +170,14 @@
     display: none;
   }
 /*--- Fin Header -- */
+
+  /* Contenedor*/
+  .card-columns {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }
+
 }
 
 @media only screen and (max-width: 530px) and (min-width: 340px){
@@ -121,13 +201,20 @@
     justify-content: center;
     padding: 2px;
   }
+
 /*--- Fin Header -- */
 /*  Menu */
 
-#imgLogo {
- height: 40px;
-}
+  #imgLogo {
+   height: 40px;
+  }
 
+  /* Contenedor*/
+  .card-columns {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }
 }
 
 @media only screen and (max-width: 339px){
@@ -155,11 +242,19 @@
   .contacto_detalle .ciudad{
     display: none;
   }
+
 /*--- Fin Header -- */
 
 /*  Menu */
 
   #imgLogo {
    height: 40px;
+  }
+
+  /* Contenedor*/
+  .card-columns {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
   }
 }
