@@ -56,7 +56,7 @@ body{
 
 /*Contenedor*/
 
-#contenido,#proveedores  h2{
+#contenido h2{
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1.5;
@@ -65,10 +65,15 @@ body{
   position: relative;
 }
 
-#contenido,#proveedores p {
+#contenido p {
   font-size: 20px;
   line-height: 1.5;
   color: gray;
+}
+
+#proveedores img{
+   width: 200px;
+   height: 100px;
 }
 
 .card-columns {
@@ -77,9 +82,12 @@ body{
   column-count:2;
 }
 
-#proveedores img{
-   width: 200px;
-   height: 100px;
+.contacto li{
+    list-style: none;
+}
+
+.contacto a:hover{
+  text-decoration: none;
 }
 
 /* Fin Contenedor*/
