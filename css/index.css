@@ -1,0 +1,133 @@
+#Header{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 95% 5%;
+  background-color: #d01d1a !important;
+  color: #fff !important;
+  align-items: center;
+}
+
+#Header li{
+  list-style: none;
+}
+
+#Header a{
+  color: white;
+}
+
+#Header a:hover{
+  text-decoration: none;
+}
+
+#Header .social{
+  padding: 0;
+}
+
+.contacto_detalle{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 33% 17% 14% 30%;
+  justify-content: space-between;
+}
+
+#teleFijo .phone{
+  display: flex;
+  grid-auto-flow: column;
+}
+
+
+
+@media only screen and (max-width: 1014px) and (min-width: 790px){
+  #correo{
+    display: none;
+  }
+
+  .contacto_detalle{
+    grid-template-columns: 43% 25% 25% 0%;
+  }
+}
+
+@media only screen and (max-width: 789px) and (min-width: 650px){
+
+  #correo{
+    display: none;
+  }
+
+  #teleFijo2 {
+    display: none;
+  }
+
+  .contacto_detalle{
+    grid-template-columns: 53% 15% 25% 0%;
+  }
+}
+
+@media only screen and (max-width: 649px) and (min-width: 530px){
+
+  #correo{
+    display: none;
+  }
+
+  #teleFijo2 {
+    display: none;
+  }
+
+  .contacto_detalle .ciudad{
+    display: none;
+  }
+
+  .contacto_detalle{
+    grid-template-columns: 45% 16% 25% 0%;
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 530px) and (min-width: 340px){
+
+  #correo{
+    display: none;
+  }
+
+  #teleFijo {
+    display: none;
+  }
+
+  .contacto_detalle{
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 2px;
+  }
+
+  #celular{
+   justify-content: center;
+   text-align: center!important;
+  }
+}
+
+@media only screen and (max-width: 339px){
+
+  #correo{
+    display: none;
+  }
+
+  #teleFijo {
+    display: none;
+  }
+
+  .contacto_detalle{
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 2px;
+  }
+
+  .contacto_detalle .ciudad{
+    display: none;
+  }
+
+  #celular{
+   justify-content: center;
+   text-align: center!important;
+  }
+}
